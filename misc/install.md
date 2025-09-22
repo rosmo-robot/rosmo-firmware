@@ -38,6 +38,14 @@ export TURTLEBOT3_MODEL=burger
 
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
+-Lazyros
+cd linorobot2_ws/venv/bin$ 
+
+source activate
+
+pip install lazyros
+
+lazyros
 
 
 
