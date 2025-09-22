@@ -10,8 +10,17 @@ sudo apt install python3-catkin-*
 
 pip install numpy lark empy catkin_pkg typeguard jinja2 pyyaml pytest
 
-New terminal
 
-ros2 launch flexbe_webui flexbe_ocs.launch.py
+New terminal
+git clone https://github.com/flexbe/flexbe_turtlesim_demo.git
+rosdep update
+rosdep install --from-paths src --ignore-src
+colcon build
+setup.bash
+
+
+export TURTLEBOT3_MODEL=burger
+
+ros2 launch flex_nav_turtlebot3_demo flex_nav_turtlebot3_demo.launch.py
 
 
