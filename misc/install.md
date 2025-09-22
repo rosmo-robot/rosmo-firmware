@@ -16,11 +16,13 @@ git clone https://github.com/flexbe/flexbe_turtlesim_demo.git
 rosdep update
 rosdep install --from-paths src --ignore-src
 colcon build
-setup.bash
-
-
+source install/local_setup.bash
 export TURTLEBOT3_MODEL=burger
 
 ros2 launch flex_nav_turtlebot3_demo flex_nav_turtlebot3_demo.launch.py
+
+New terminal 
+ros2 launch flexbe_onboard behavior_onboard.launch.py
+
 
 
